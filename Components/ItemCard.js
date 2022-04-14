@@ -16,6 +16,9 @@ const ItemCard = ({ data }) => {
         ...SHADOWS.dark,
       }}
     >
+      <View style={{ width: "100%", height: 250 }}>
+        <Image source={data.image} />
+      </View>
       <Text>ItemCard</Text>
     </View>
   );
