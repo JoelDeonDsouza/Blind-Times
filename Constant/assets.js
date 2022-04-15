@@ -14,10 +14,10 @@ import img5 from "../assets/images/img5.png";
 import img6 from "../assets/images/img6.png";
 import img7 from "../assets/images/img7.png";
 
-// import person01 from "../assets/images/person01.png";
-// import person02 from "../assets/images/person02.png";
-// import person03 from "../assets/images/person03.png";
-// import person04 from "../assets/images/person04.png";
+import person01 from "../assets/images/person01.png";
+import person02 from "../assets/images/person02.png";
+import person03 from "../assets/images/person03.png";
+import person04 from "../assets/images/person04.png";
 
 export default {
   badge,
@@ -35,8 +35,8 @@ export default {
   img6,
   img7,
 
-  //   person01,
-  //   person02,
-  //   person03,
-  //   person04,
+  person01,
+  person02,
+  person03,
+  person04,
 };

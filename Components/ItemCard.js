@@ -3,6 +3,7 @@ import { View, Image, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { COLORS, SIZES, SHADOWS, assets } from "../Constant";
 import { CircleBTN, RectBTN } from "./BTN";
+import { SubInfo, Price, Title } from "./SubInfo";
 
 const ItemCard = ({ data }) => {
   const navigation = useNavigation();
@@ -30,7 +31,8 @@ const ItemCard = ({ data }) => {
         />
         <CircleBTN imgUrl={assets.heart} right={10} top={10} />
       </View>
-      <Text>ItemCard</Text>
+      {/* <Text>ItemCard</Text> */}
+      <SubInfo />
     </View>
   );
 };
