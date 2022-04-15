@@ -33,6 +33,9 @@ const ItemCard = ({ data }) => {
       </View>
       {/* <Text>ItemCard</Text> */}
       <SubInfo />
+      <View style={{ width: "100%", padding: SIZES.font }}>
+        <Title />
+      </View>
     </View>
   );
 };

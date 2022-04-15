@@ -46,8 +46,26 @@ export const Buyers = () => {
 
 export const EndDate = () => {
   return (
-    <View>
-      <Text>EndDate</Text>
+    <View
+      style={{
+        paddingHorizontal: SIZES.font,
+        paddingVertical: SIZES.base,
+        backgroundColor: COLORS.white,
+        justifyContent: "center",
+        alignItems: "center",
+        ...SHADOWS.light,
+        elevation: 1,
+        maxWidth: "50%",
+      }}
+    >
+      <Text style={{ fontSize: SIZES.small, color: COLORS.primary }}>
+        Time Out
+      </Text>
+      <Text
+        style={{ fontSize: SIZES.large, fontWeight: "bold", color: "#B20600" }}
+      >
+        24:00h
+      </Text>
     </View>
   );
 };
