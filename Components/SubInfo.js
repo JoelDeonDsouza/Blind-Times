@@ -1,11 +1,19 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
-import { COLORS, SIZES, SHADOWS, assets } from "../Constant";
+import { COLORS, SIZES, SHADOWS, assets, FONTS } from "../Constant";
 
-export const Title = () => {
+export const Title = ({ title, subTitle, titleSize, subTitleSize }) => {
   return (
     <View>
-      <Text>Title</Text>
+      <Text
+        style={{
+          fontFamily: FONTS.semiBold,
+          fontSize: titleSize,
+          color: COLORS.primary,
+        }}
+      >
+        {title}
+      </Text>
     </View>
   );
 };

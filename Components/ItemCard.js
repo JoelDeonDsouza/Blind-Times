@@ -34,7 +34,12 @@ const ItemCard = ({ data }) => {
       {/* <Text>ItemCard</Text> */}
       <SubInfo />
       <View style={{ width: "100%", padding: SIZES.font }}>
-        <Title />
+        <Title
+          title={data.data}
+          subTitle={data.creator}
+          titleSize={SIZES.large}
+          subTitleSize={SIZES.small}
+        />
       </View>
     </View>
   );
