@@ -9,7 +9,7 @@ export const Title = ({ title, subTitle, titleSize, subTitleSize }) => {
         style={{
           fontFamily: FONTS.semiBold,
           fontSize: titleSize,
-          color: COLORS.primary,
+          color: COLORS.secondary,
         }}
       >
         {title}
@@ -27,10 +27,17 @@ export const Title = ({ title, subTitle, titleSize, subTitleSize }) => {
   );
 };
 
-export const Price = () => {
+export const Price = ({ price }) => {
   return (
-    <View>
-      <Text>Price</Text>
+    <View style={{ flexDirection: "row", alignItems: "center" }}>
+      <Image
+        source={assets.eth}
+        resizeMode="contain"
+        style={{ width: 20, height: 20, margin: 2 }}
+      />
+      <Text style={{ fontSize: SIZES.font, color: COLORS.secondary }}>
+        {price}
+      </Text>
     </View>
   );
 };

@@ -35,11 +35,26 @@ const ItemCard = ({ data }) => {
       <SubInfo />
       <View style={{ width: "100%", padding: SIZES.font }}>
         <Title
-          title={data.data}
+          title={data.name}
           subTitle={data.creator}
           titleSize={SIZES.large}
           subTitleSize={SIZES.small}
         />
+        <View
+          style={{
+            marginTop: SIZES.font,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Price price={data.price} />
+          <RectBTN
+            minWidth={120}
+            fontSize={SIZES.font}
+            handlePress={() => navigation.navigate("Details", { data })}
+          />
+        </View>
       </View>
     </View>
   );
