@@ -41,15 +41,15 @@ const Details = ({ route, navigation }) => {
         <RectBTN minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
       </View>
       <FlatList
-        data={data.bids}
-        renderItem={({ item }) => (
-          <DetailsBid
-          // bid={item}
-          // keyExtractor={(item) => item.id}
-          // showsVerticalcrollIndicator={false}
-          // contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
-          />
-        )}
+      // data={data.bids}
+      // renderItem={({ item }) => (
+      //   <DetailsBid
+      //   // bid={item}
+      //   // keyExtractor={(item) => item.id}
+      //   // showsVerticalcrollIndicator={false}
+      //   // contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
+      //   />
+      // )}
       />
     </SafeAreaView>
   );
