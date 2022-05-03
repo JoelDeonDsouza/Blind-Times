@@ -2,11 +2,7 @@ import React from "react";
 import { Text } from "react-native";
 
 const DetailsBid = () => {
-  return (
-    <div>
-      <Text>DetailsBid</Text>
-    </div>
-  );
+  return <Text>DetailsBid</Text>;
 };
 
 export default DetailsBid;
