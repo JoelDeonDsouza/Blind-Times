@@ -16,6 +16,17 @@ import {
   DetailsDesc,
   DetailsBid,
 } from "../Components";
+import { ImageCamp } from "../Components/SubInfo";
+
+const DetailsHeader = ({ data, navigation }) => (
+  <View style={{ width: "100%", height: 373 }}>
+    <Image
+      source={data.image}
+      resizeMode="cover"
+      style={{ width: "100%", height: "100%" }}
+    />
+  </View>
+);
 
 const Details = ({ route, navigation }) => {
   // console.log(route);
@@ -48,6 +59,11 @@ const Details = ({ route, navigation }) => {
             keyExtractor={(item) => item.id}
             showsVerticalcrollIndicator={false}
             contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
+            ListHeaderComponent={() => (
+              <React.Fragment>
+                <DetailsHeader data={data} navigation={navigation} />
+              </React.Fragment>
+            )}
           />
         )}
       />
